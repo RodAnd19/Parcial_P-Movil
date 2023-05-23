@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Festival_App</string>
-    
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="festival_list_text">Festival List</string>
+    <string name="los_angeles">Los Angeles</string>
+    <string name="name_tv">Coachella</string>
+    <string name="place_et">Ubicación</string>
+    <string name="btn_text">Agregar</string>
+    <string name="name_et">Nombre</string>
+    <string name="tittle_tv">Agregar Festival Nuevo</string>
+    <string name="name_festival_tv">Nombre del festival:</string>
+    <string name="place_festival_tv">Lugar donde se realizara:</string>
 </resources>

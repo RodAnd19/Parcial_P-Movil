@@ -34,7 +34,7 @@
 
                 <TextView
                     android:id="@+id/nameFestivalTv"
-                    android:text="Coachella"
+                    android:text="@string/name_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Los Angeles"
+                    android:text="@string/los_angeles"
                     android:textAlignment="center"
                     android:textColor="@color/place_text_color"
                     android:textSize="20sp"
