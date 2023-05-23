@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/festivalItemFragment"
-        android:name="com.andres.festival_app.FestivalItemFragment"
+        android:name="com.andres.festival_app.ui.festival.FestivalItemFragment"
         android:label="fragment_festival_item"
         tools:layout="@layout/fragment_festival_item" />
     <fragment
         android:id="@+id/addFestivalFragment"
-        android:name="com.andres.festival_app.AddFestivalFragment"
+        android:name="com.andres.festival_app.ui.festival.AddFestivalFragment"
         android:label="fragment_add_festival"
         tools:layout="@layout/fragment_add_festival" />
     <fragment
         android:id="@+id/festivalListFragment"
-        android:name="com.andres.festival_app.FestivalListFragment"
+        android:name="com.andres.festival_app.ui.festival.FestivalListFragment"
         android:label="fragment_festival_list"
         tools:layout="@layout/fragment_festival_list" >
         <action
