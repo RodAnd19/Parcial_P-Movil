@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/festivalListFragment">
+
+    <fragment
+        android:id="@+id/festivalItemFragment"
+        android:name="com.andres.festival_app.FestivalItemFragment"
+        android:label="fragment_festival_item"
+        tools:layout="@layout/fragment_festival_item" />
+    <fragment
+        android:id="@+id/addFestivalFragment"
+        android:name="com.andres.festival_app.AddFestivalFragment"
+        android:label="fragment_add_festival"
+        tools:layout="@layout/fragment_add_festival" />
+    <fragment
+        android:id="@+id/festivalListFragment"
+        android:name="com.andres.festival_app.FestivalListFragment"
+        android:label="fragment_festival_list"
+        tools:layout="@layout/fragment_festival_list" >
+        <action
+            android:id="@+id/action_festivalListFragment_to_addFestivalFragment"
+            app:destination="@id/addFestivalFragment" />
+        <action
+            android:id="@+id/action_festivalListFragment_to_festivalItemFragment"
+            app:destination="@id/festivalItemFragment" />
+    </fragment>
+</navigation>
