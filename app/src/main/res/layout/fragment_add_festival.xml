@@ -7,14 +7,14 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.andres.festival_app.ui.festival.FestivalViewModel" />
+            type="com.andres.festival_app.ui.festival.viewmodel.FestivalViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background_color"
-        tools:context=".ui.festival.AddFestivalFragment">
+        tools:context=".ui.festival.newfestival.AddFestivalFragment">
 
         <TextView
             android:id="@+id/textView"

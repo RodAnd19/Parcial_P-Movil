@@ -1,4 +1,4 @@
-package com.andres.festival_app.ui.festival
+package com.andres.festival_app.ui.festival.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.AP
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.andres.festival_app.FestivalReviewerApplication
+import com.andres.festival_app.data.festivals
 import com.andres.festival_app.data.model.FestivalModel
 import com.andres.festival_app.repositories.FestivalRepository
 
@@ -47,13 +48,18 @@ class FestivalViewModel (private val repository : FestivalRepository) : ViewMode
         return true
     }
 
-    private fun clearData() {
+    fun clearData() {
         name.value = ""
         place.value = ""
     }
 
     fun clearStatus() {
         status.value = INACTIVE
+    }
+
+    fun setSelectedFestival(festival : FestivalModel) {
+        name.value = festival.name
+        place.value = festival.place
     }
 
     // Global Variables

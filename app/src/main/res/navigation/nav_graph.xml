@@ -12,12 +12,12 @@
         tools:layout="@layout/fragment_festival_item" />
     <fragment
         android:id="@+id/addFestivalFragment"
-        android:name="com.andres.festival_app.ui.festival.AddFestivalFragment"
+        android:name="com.andres.festival_app.ui.festival.newfestival.AddFestivalFragment"
         android:label="fragment_add_festival"
         tools:layout="@layout/fragment_add_festival" />
     <fragment
         android:id="@+id/festivalListFragment"
-        android:name="com.andres.festival_app.ui.festival.FestivalListFragment"
+        android:name="com.andres.festival_app.ui.festival.listfestivals.FestivalListFragment"
         android:label="fragment_festival_list"
         tools:layout="@layout/fragment_festival_list" >
         <action
