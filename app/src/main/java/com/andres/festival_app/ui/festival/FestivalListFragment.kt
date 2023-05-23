@@ -6,17 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.andres.festival_app.R
+import com.andres.festival_app.databinding.FragmentFestivalListBinding
 
 
 class FestivalListFragment : Fragment() {
 
+    private lateinit var binding : FragmentFestivalListBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_festival_list, container, false)
+        binding = FragmentFestivalListBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
 }
